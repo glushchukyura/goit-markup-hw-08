@@ -1,0 +1,122 @@
+.header__wrap {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    background: #FFFFFF;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ececec;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.navigation__list {
+    display: flex;
+}
+
+.navigation__item {
+    margin-right: 50px;
+
+    &:last-child {
+        margin-right: 0px;
+    }
+}
+
+.navigation__link {
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic);
+
+    &:hover, 
+    &:focus {
+            color: var(--accent-color);
+        }
+
+    &.current::after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 100%;
+        height: 4px;
+        left: 0;
+        bottom: 0;
+        border-radius: 2px;
+        background-color: var(--accent-color);
+        transform: scaleX(1);
+        opacity: 1;
+        transition: transform 250ms var(--animation), opacity 250ms var(--animation),
+            background-color 250ms var(--animation);
+    }
+    
+}
+
+.connection--position {
+    margin-left: auto;
+}
+
+.connection__list {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.connection__item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+
+    &:first-child {
+        margin-right: 50px;
+    }
+}
+
+.connection__mail-icon {
+    display: flex;
+    margin-right: 10px;
+    fill: #757575;
+
+    .connection__link:hover &,
+    .connection__link:focus & {
+        fill: var(--accent-color);
+    }
+}
+
+.connection__tel-icon {
+    display: flex;
+    margin-right: 10px;
+    fill: #757575;
+
+    .connection__link:hover &,
+    .connection__link:focus & {
+        fill: var(--accent-color)
+    }
+}
+
+.connection__link {
+    display: flex;
+    align-items: center;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic);
+
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+    }
+}

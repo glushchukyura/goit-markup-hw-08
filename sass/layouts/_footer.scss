@@ -1,0 +1,55 @@
+.footer {
+    background: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer--flex {
+    display: flex;
+    align-items: baseline;
+}
+
+.address--position {
+    margin-top: 20px;
+}
+
+.address__item--position {
+    margin-bottom: 9px;
+}
+
+.map__link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.mail__link,
+.tel__link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.join-us {
+    max-width: 206px;
+}
+
+.join-us--position{
+    margin-left: 70px;
+}
+
+.join-us__title {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+

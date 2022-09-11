@@ -1,0 +1,46 @@
+.principles,
+.tasks {
+    padding-top: 94px;
+}
+
+.principles__list {
+    display: flex;
+}
+
+.principles__item {
+    max-width: 270px;
+    margin-right: 30px;
+
+    &:last-child {
+        margin-right: 0px;
+    }
+}
+
+.principles__box {
+    display: flex;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+}
+
+.principles__title {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.principles__after-title {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+}
+
+
+
+
