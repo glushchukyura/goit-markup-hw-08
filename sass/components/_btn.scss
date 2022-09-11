@@ -20,4 +20,19 @@
     &:hover {
         transform: scaleX(1.02);
     }
+
+    @include mobile {
+        min-width: 200px;
+        padding: 10px 24px 10px 24px;
+    }
+    
+    @include tablet {
+        min-width: 200px;
+        padding: 10px 24px 10px 24px;
+    }
+    
+    @include desktop {
+        min-width: 216px;
+        padding: 10px 32px 10px 32px;
+    }
 }

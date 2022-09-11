@@ -37,7 +37,20 @@
 
 .filter-list {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: left;
+
+    @include mobile {
+        justify-content: left;
+    }
+
+    @include tablet {
+        justify-content: center;
+    }
+
+    @include desktop {
+        justify-content: center;
+    }
 }
 
 .filter-list-btn {
@@ -45,5 +58,21 @@
     
     &:last-child {
         margin-right: 0px;
+    }
+    
+    margin-bottom: 15px;
+
+    @include mobile {
+        margin-bottom: 15px;
+    }
+
+    @include tablet {
+        justify-content: center;
+        margin-bottom: 0px;
+    }
+
+    @include desktop {
+        justify-content: center;
+        margin-bottom: 0px;
     }
 }

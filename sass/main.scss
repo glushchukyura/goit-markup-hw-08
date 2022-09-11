@@ -1,5 +1,6 @@
 @import './utils/root';
 @import './utils/hidden';
+@import './utils/mixins';
 
 @import './base/reset';
 @import './base/common';
@@ -20,6 +21,7 @@
 @import './layouts/filter-btns';
 @import './layouts/projects';
 @import './layouts/footer-subscribing';
+@import './layouts/mob-menu';
 
 
 @import './layouts/modal';
