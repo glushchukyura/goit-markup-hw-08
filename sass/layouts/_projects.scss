@@ -16,8 +16,16 @@
 .projects-list {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 50px;
+    margin-top: 40px;
     gap: 30px;
+
+    @include tablet {
+        margin-top: 30px;
+    }
+
+    @include desktop {
+        margin-top: 50px;
+    }
 }
 
 .projects-list-item {
