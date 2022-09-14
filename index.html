@@ -71,11 +71,63 @@
             </li>
           </ul>
         </div>
-        <button type="button" class="btn__menu">
+        <button type="button" class="menu-button js-open-menu" data-menu-open">
           <svg class="" width="40" height="40">
             <use href="./img/icons.svg#icon-menu_icon"></use>
           </svg>
         </button>
+      </div>
+      <!-----------------------MOB MENU-------------------------------->
+      <div
+        class="mobile-menu js-menu-container is-hidden"
+        data-menu
+      >
+        <button
+          type="button"
+          class="menu-button-close js-close-menu"
+          data-menu-close
+        >
+          <svg class="icon-menu-close" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu-close"></use>
+          </svg>
+        </button>
+        <nav class="menu-nav">
+          <ul class="mobile-nav">
+            <li class="item">
+              <a href="./index.html" class="link current">Студія</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="link">Портфоліо</a>
+            </li>
+            <li class="item"><a href="" class="link">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="mobile-contacts">
+          <li class="item">
+            <a href="tel:+380961111111" class="link phone">
+              +38 096 111 11 11
+            </a>
+          </li>
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="link mail">
+              info@devstudio.com
+            </a>
+          </li>
+        </ul>
+        <ul class="mobile-sm">
+          <li class="mobile-sm-item">
+            <a href="" class="mobile-sm-link"> Instagram </a>
+          </li>
+          <li class="mobile-sm-item">
+            <a href="" class="mobile-sm-link"> Twitter </a>
+          </li>
+          <li class="mobile-sm-item">
+            <a href="" class="mobile-sm-link"> Facebook </a>
+          </li>
+          <li class="mobile-sm-item">
+            <a href="" class="mobile-sm-link"> LinkedIn </a>
+          </li>
+        </ul>
       </div>
     </header>
 
@@ -713,6 +765,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
-    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/mob-menu.js"></script>
   </body>
 </html>
