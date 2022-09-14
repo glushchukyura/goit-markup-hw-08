@@ -1530,12 +1530,6 @@ link:visited {
   border-color: var(--accent-color);
 }
 
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
 .close-icon {
   position: absolute;
   top: 50%;
@@ -1888,4 +1882,10 @@ link:visited {
   letter-spacing: 0.02em;
   color: #2196f3;
   text-decoration: none;
+}
+
+.is-hidden {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  opacity: 0;
 }/*# sourceMappingURL=main.css.map */
