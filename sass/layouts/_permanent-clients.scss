@@ -52,7 +52,7 @@
 }
 
 .permanent-clients__link {
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
@@ -65,6 +65,20 @@
     &:focus {
         border: 1px solid var(--accent-color);
     }
+
+    @include mobile {
+        width: 210px;
+    }
+    
+    @include tablet {
+        width: 226px;
+    }
+    
+    @include desktop {
+        width: 170px;
+    }
+
+
 }
 
 .permanent-clients__icon {
